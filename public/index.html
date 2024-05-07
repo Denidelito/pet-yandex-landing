@@ -9,14 +9,40 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        шапка
-      </header>
+    <div class="banner">
+      <div class="container">
+        <div class="banner__content">
+          <div class="banner__logo">
+            <svg class="icon-logo">
+              <use xlink:href="#icon-logo"></use>
+            </svg>
+          </div>
+          <h1 class="banner__title">
+            <span>Превратите уездный город</span>
+            <span class="text-center">в столицу</span>
+            <span class="text-right">земного шара</span>
+          </h1>
+          <p class="banner__description">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+          <div class="banner__buttons">
+            <a href="#" class="btn btn--primary">Поддержать шахматную&nbsp;мысль</a>
+            <a href="#" class="btn btn--secondary">Подробнее о&nbsp;турнире</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <section>
-      контент
-    </section>
+    <div class="marquee js-marquee">
+      <div class="marquee__content js-marquee-content">
+        <span class="marquee__text">Дело помощи утопающим — дело рук самих утопающих!</span>
+        <span class="marquee__text">Шахматы двигают вперед не только культуру, но и экономику!</span>
+        <span class="marquee__text">Лед тронулся, господа присяжные заседатели!</span>
+      </div>
+    </div>
+    <div class="tournament-info">
+      <h2 class="tournament-info__title">Чтобы поддержать Международный васюкинский турнир</h2>
+      <h2 class="tournament-info__title">посетите лекцию на тему: «Плодотворная дебютная идея»</h2>
+      <img src="./assets/images/tournament-info.png" alt="Шахматный турнир" class="tournament-info__image">
+    </div>
+
     <footer>
       футер
     </footer>

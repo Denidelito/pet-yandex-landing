@@ -1,5 +1,15 @@
 @import "fonts.css";
 @import "root.css";
 
+/*utility*/
+@import "utility/text.css";
+@import "utility/position.css";
+
+/*elements*/
+@import "elements/container.css";
+@import "elements/buttons.css";
+@import "elements/icons.css";
+
 /*components*/
-@import "components/container.css";
+@import "components/banner.css";
+@import "components/marquee.css";
