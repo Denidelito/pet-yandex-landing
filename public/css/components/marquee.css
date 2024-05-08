@@ -9,6 +9,10 @@
     white-space: nowrap;
     margin-bottom: 80px;
 
+    &.marquee--margin-none {
+        margin: 0;
+    }
+
     & .marquee__content {
         position: absolute;
         color: white;

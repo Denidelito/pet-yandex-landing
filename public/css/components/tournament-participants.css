@@ -1,8 +1,10 @@
 .tournament-participants {
+    position: relative;
     margin-bottom: 140px;
 
     & .tournament-participants__title {
         font-size: 3.375rem;
+        line-height: 1.2;
         margin-bottom: 60px;
     }
 
@@ -15,4 +17,61 @@
         text-align: center;
         flex-shrink: 0;
     }
+
+    & .tournament-participants__image {
+        margin-bottom: 28px;
+    }
+
+    & .tournament-participants__name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    & .tournament-participants__role {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    & .tournament-participants__link {
+        display: inline-block;
+        font-weight: 600;
+        border: 2px solid #3057A2;
+        border-radius: 62px;
+        padding: 10px;
+        color: #3057A2;
+        transition: .3s;
+
+        &:hover {
+            color: white;
+            background-color: #3057A2;
+        }
+    }
+
+    & .swiper__navigation {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 100px;
+
+        & .tournament-participants__title {
+            font-size: 2.25rem;
+            margin-bottom: 40px;
+        }
+
+        & .tournament-participants__image {
+            width: 244px;
+        }
+
+        & .swiper__navigation {
+            position: relative;
+            top: 0;
+            margin: 48px 0 0;
+        }
+    }
+
 }

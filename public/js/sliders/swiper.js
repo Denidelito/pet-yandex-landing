@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination} from "swiper/modules";
+import {Navigation, Pagination, Autoplay} from "swiper/modules";
 import "swiper/swiper-bundle.css";
 
 let swiper = null;
@@ -15,6 +15,7 @@ export function initializeSwiper() {
             slidesPerView: 1,
             mousewheel: true,
             loop: false,
+            speed: 800,
             navigation: {
                 nextEl: '.js-swiper-button-next',
                 prevEl: '.js-swiper-button-prev',
@@ -22,6 +23,7 @@ export function initializeSwiper() {
             pagination: {
                 el: '.js-swiper-pagination',
                 clickable: true,
+                type: 'bullets',
             },
             wrapperClass: 'js-swiper-wrapper',
             slideClass: 'js-swiper-slide',
@@ -30,25 +32,32 @@ export function initializeSwiper() {
 }
 
 export function initializeSwiperParticipants() {
-    const swiperElementParticipants = document.querySelector('.js-swiper-participants');
+    const swiperElementParticipants = document.querySelector('.js-swiperParticipants');
 
     if (swiperElementParticipants && !swiperParticipants) {
         swiperParticipants = new Swiper(swiperElementParticipants, {
-            modules: [Navigation, Pagination],
+            modules: [Navigation, Pagination, Autoplay],
             grabCursor: true,
+            autoplay: {
+                delay: 4000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            speed: 800,
             slidesPerView: 1,
             mousewheel: true,
             loop: true,
             navigation: {
-                nextEl: '.js-swiper-button-next',
-                prevEl: '.js-swiper-button-prev',
+                nextEl: '.js-swiperParticipants-button-next',
+                prevEl: '.js-swiperParticipants-button-prev',
             },
             pagination: {
-                el: '.js-swiper-pagination',
+                el: '.js-swiperParticipants-pagination',
                 clickable: true,
+                type: 'fraction',
             },
-            wrapperClass: 'js-swiper-wrapper',
-            slideClass: 'js-swiper-slide',
+            wrapperClass: 'js-swiperParticipants-wrapper',
+            slideClass: 'js-swiperParticipants-slide',
             breakpoints: {
                 768: {
                     slidesPerView: 2,

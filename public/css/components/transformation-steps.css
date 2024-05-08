@@ -3,6 +3,7 @@
 
     & .transformation-steps__title {
         font-size: 3.375rem;
+        line-height: 1.2;
         max-width: 806px;
         margin-bottom: 54px;
     }
@@ -75,6 +76,8 @@
     }
 
     @media (max-width: 768px) {
+        margin-bottom: 120px;
+
         & .transformation-steps__title {
             font-size: 2.25rem;
             margin-bottom: 20px;
