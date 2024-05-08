@@ -1,0 +1,18 @@
+.tournament-participants {
+    margin-bottom: 140px;
+
+    & .tournament-participants__title {
+        font-size: 3.375rem;
+        margin-bottom: 60px;
+    }
+
+    & .tournament-participants__list {
+        width: 100%;
+        display: flex;
+    }
+
+    & .tournament-participants__item {
+        text-align: center;
+        flex-shrink: 0;
+    }
+}

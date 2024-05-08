@@ -2,14 +2,14 @@
 import 'virtual:svg-icons-register'
 
 // animations
-import {animateMarquee} from "./animations/marquee.js";
-animateMarquee(.5);
-
+import { initializeMarquee, initializeAllMarquees } from './animations/marquee.js'
 
 // swiper
-import { initializeSwiper, destroySwiper, checkScreenWidth } from './sliders/swiper.js';
+import { initializeSwiper, initializeSwiperParticipants, destroySwiper, checkScreenWidth } from './sliders/swiper.js';
 
 document.addEventListener('DOMContentLoaded', function() {
+    initializeAllMarquees(.5);
+
     checkScreenWidth();
 });
 
