@@ -1,0 +1,135 @@
+.transformation-steps {
+    margin-bottom: 200px;
+
+    & .transformation-steps__title {
+        font-size: 3.375rem;
+        max-width: 806px;
+        margin-bottom: 54px;
+    }
+
+    & .transformation-steps__subtitle {
+        max-width: 280px;
+        display: inline-block;
+        font-size: 1.25rem;
+        font-family: var(--font-primary);
+        font-weight: 400;
+        text-transform: initial;
+        color: #3057A2;
+    }
+
+    & .transformation-steps__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 20px;
+    }
+
+    & .transformation-steps__item {
+        display: flex;
+        padding: 20px;
+        background-image: url("../../assets/images/pattern-transformation-steps.jpg");
+        background-position: center;
+
+        &.transformation-steps__item--dabblle-row {
+            grid-row: span 2;
+        }
+
+        &.transformation-steps__item--dabblle-col {
+            grid-column: span 2;
+        }
+    }
+
+    & .transformation-steps__number {
+        font-size: 1.25rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        margin-right: 16px;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+    }
+
+    & .transformation-steps__description {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .transformation-steps__group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        grid-column: span 2;
+    }
+
+    .transformation-steps__plane {
+        margin: -87px -46px -20px 0;
+
+        &.transformation-steps__plane--phone {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        & .transformation-steps__title {
+            font-size: 2.25rem;
+            margin-bottom: 20px;
+        }
+
+        .transformation-steps__subtitle {
+            font-size: 1.125rem;
+        }
+
+        & .transformation-steps__items {
+            display: flex;
+            gap: 0;
+        }
+
+        & .transformation-steps__group {
+            background-image: url("../../assets/images/pattern-transformation-steps.jpg");
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            flex-shrink: 0;
+
+            & > .transformation-steps__item {
+                background-image: none;
+                padding: 28px 20px 34px;
+
+                &:first-child {
+                    padding: 62px 20px 0;
+                }
+            }
+        }
+
+        & .transformation-steps__item {
+            padding: 62px 20px 34px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+            width: 100%;
+        }
+
+        & .transformation-steps__description {
+            font-size: 1.125rem;
+        }
+
+
+        .transformation-steps__plane {
+            &.transformation-steps__plane--desktop {
+                display: none;
+            }
+            &.transformation-steps__plane--phone {
+                position: relative;
+                z-index: 2;
+                margin: 0 0 -54px;
+                display: block;
+            }
+        }
+
+    }
+}

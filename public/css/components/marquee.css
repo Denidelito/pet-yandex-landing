@@ -7,6 +7,7 @@
     height: 60px;
     overflow: hidden;
     white-space: nowrap;
+    margin-bottom: 80px;
 
     & .marquee__content {
         position: absolute;
@@ -36,6 +37,7 @@
 
     @media (max-width: 768px) {
         height: 38px;
+        margin-bottom: 48px;
 
         & .marquee__text {
             font-size: 1rem;

@@ -18,6 +18,17 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'GolosText';
+    src: url('../assets/fonts/GolosText-SemiBold.eot');
+    src: url('../assets/fonts/GolosText-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/GolosText-SemiBold.woff') format('woff'),
+    url('../assets/fonts/GolosText-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'GolosText';
     src: url('../assets/fonts/GolosText-Medium.eot');
