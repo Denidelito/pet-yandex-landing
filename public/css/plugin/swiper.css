@@ -1,0 +1,74 @@
+.swiper-initialized {
+    overflow: hidden;
+}
+
+.swiper__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 28px 0 0;
+
+    & .swiper__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: var(--btn-color-primary);
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--btn-color-hover-primary);
+        }
+
+        &.swiper-button-disabled {
+            cursor: default;
+            background-color: var(--btn-color-disable);
+        }
+
+        &.swiper__btn--next {
+            & > svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        &.swiper__btn--disable {
+            background-color: var(--btn-color-disable);
+        }
+
+        & > svg {
+            width: 10px;
+            height: 18px;
+            color: white;
+        }
+    }
+
+    &.swiper__navigation--hide-desktop {
+        display: none;
+    }
+
+    & .swiper__pagination {
+        width: auto!important;
+        margin: 0 16px;
+
+        & .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background-color: var(--btn-color-disable);
+
+            &.swiper-pagination-bullet-active {
+                background-color: var(--btn-color-primary);
+            }
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        &.swiper__navigation--hide-desktop {
+            display: flex;
+        }
+    }
+}
