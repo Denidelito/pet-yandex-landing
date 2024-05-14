@@ -13,7 +13,8 @@
     "vite-plugin-svg-icons": "^2.0.1"
   },
   "dependencies": {
+    "fast-glob": "^3.3.2",
     "swiper": "^11.1.0",
-    "fast-glob": "^3.3.2"
+    "vite-plugin-legacy": "^2.1.0"
   }
 }
