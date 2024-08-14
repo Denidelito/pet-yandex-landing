@@ -1,0 +1,14 @@
+.text {
+    &.text_right {
+        text-align: right;
+    }
+    &.text_center {
+        text-align: center;
+    }
+    &.text_bold {
+        font-weight: 800;
+    }
+    &.text-red {
+        color: #F54932;
+    }
+}

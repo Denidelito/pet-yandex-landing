@@ -1,0 +1,35 @@
+:root {
+    font-family: var(--font-primary), sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+
+    color-scheme: light dark;
+    color: var(--color-primary);
+    background-color: #FFFFFF;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --font-primary: GolosText;
+    --font-secondary: Merriweather;
+    --color-primary: #313131;
+    --color-secodary: #FFFFFF;
+
+
+    @media (max-width: 768px) {
+        --btn-color-secondary: rgba(255, 255, 255, 0.9);
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+
+
+    @media (max-width: 768px) {
+        max-width: 375px;
+    }
+}

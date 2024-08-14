@@ -1,0 +1,33 @@
+.running-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #F54932;
+    color: white;
+    height: 60px;
+}
+
+.running-line__list {
+    display: flex;
+    position: absolute;
+}
+
+.running-line__item {
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 22px;
+    font-family: var(--font-secondary), sans-serif;
+    padding-right: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .running-line {
+        height: 38px;
+    }
+
+    .running-line__item {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,64 @@
+.tournament-information {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 78px 29px 0 29px;
+    margin: 0 auto;
+}
+
+.tournament-information__header {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.tournament-information__title {
+    font-family: var(--font-secondary), serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 135%;
+
+    & > p {
+        display: inline;
+        margin: 0;
+    }
+}
+
+.tournament-information__image {
+    line-height: 0;
+
+    &.tournament-information__image_phone {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tournament-information {
+        padding: 48px 20px 292px 20px;
+    }
+
+    .tournament-information__title {
+        font-size: 28px;
+        line-height: 135%;
+    }
+
+    .tournament-information__image {
+        &.tournament-information__image_desktop {
+            display: none;
+        }
+
+        &.tournament-information__image_phone {
+            display: block;
+            padding: 24px 0;
+
+            & > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.header {
+    display: block;
+    position: relative;
+}
+
+.header__background {
+    line-height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header__container {
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 27px 29px 130px 29px;
+    margin: 0 auto;
+}
+
+.header__information {
+    max-width: 542px;
+}
+
+.header__logo {
+    padding-bottom: 61px;
+    line-height: 0;
+}
+
+.header__title {
+    font-family: var(--font-secondary), serif;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+    padding-bottom: 24px;
+
+    & > span {
+        display: block;
+    }
+}
+
+.header__description {
+    text-align: center;
+    font-size: 18px;
+    line-height: 130%;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.header__nav {
+    display: flex;
+    gap: 16px;
+}
+
+.header__btn {
+    display: block;
+    width: 50%;
+    padding: 13px 49px;
+    border: 2px solid #1F1F1F;
+    border-radius: 66px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s ease;
+
+    &.header__btn_primary {
+        background-color: #1F1F1F;
+        color: white;
+
+        &:hover {
+            background-color: #FBCE51;
+            border-color: #FBCE51;
+            color: #1F1F1F
+        }
+    }
+
+    &.header__btn_secondary {
+        color: #1F1F1F;
+
+        &:hover {
+            background-color: #1F1F1F;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        padding: 18px 20px 292px 20px;
+    }
+
+    .header__logo {
+        padding-bottom: 42px;
+
+        & > img {
+            width: 211px;
+            height: 31px;
+        }
+    }
+
+    .header__title {
+        font-size: 36px;
+        padding-bottom: 24px;
+    }
+
+    .header__description {
+        text-align: left;
+        padding-bottom: 32px;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .header__btn {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 11px 38px;
+
+        &.header__btn_secondary {
+            color: #1F1F1F;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-color: rgba(255, 255, 255, 0.9);
+
+            &:hover {
+                background-color: #1F1F1F;
+                border-color: #1F1F1F;
+                color: white;
+            }
+        }
+    }
+
+}

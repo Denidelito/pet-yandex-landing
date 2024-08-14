@@ -1,0 +1,10 @@
+@import "./fonts.css";
+@import "./root.css";
+
+/* components */
+@import "./components/header.css";
+@import "./components/runnig-line.css";
+@import "./components/tournament-information.css";
+
+/* utility */
+@import "./utility/text.css";
