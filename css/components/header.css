@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 1280px;
     box-sizing: border-box;
-    padding: 27px 29px 130px 29px;
+    padding: 27px 29px 132px 29px;
     margin: 0 auto;
 }
 
@@ -50,7 +50,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 130%;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     margin: 0;
 }
 
@@ -93,7 +93,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 998px) {
     .header__container {
         padding: 18px 20px 292px 20px;
     }

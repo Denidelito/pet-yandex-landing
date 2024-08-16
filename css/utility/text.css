@@ -8,7 +8,16 @@
     &.text_bold {
         font-weight: 800;
     }
+    &.text_sBold {
+        font-weight: 500;
+    }
     &.text-red {
         color: #F54932;
+    }
+    &.text_blue {
+        color: #3057A2;
+    }
+    &.text_strike {
+        text-decoration-color: #F54932;
     }
 }

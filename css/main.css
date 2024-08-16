@@ -5,6 +5,12 @@
 @import "./components/header.css";
 @import "./components/runnig-line.css";
 @import "./components/tournament-information.css";
+@import "./components/staps.css";
+@import "./components/participants.css";
+
+/* elements */
+@import "./elements/table.css";
+@import "./elements/slider.css";
 
 /* utility */
 @import "./utility/text.css";
