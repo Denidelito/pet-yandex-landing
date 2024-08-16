@@ -7,6 +7,7 @@
 @import "./components/tournament-information.css";
 @import "./components/staps.css";
 @import "./components/participants.css";
+@import "./components/footer.css";
 
 /* elements */
 @import "./elements/table.css";

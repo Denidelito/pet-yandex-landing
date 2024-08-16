@@ -1,0 +1,24 @@
+.footer {
+    background-color: #E9DED4;
+}
+
+.footer__container {
+    width: 100%;
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 40px 29px 72px 29px;
+    margin: 0 auto;
+
+    & > p {
+        font-size: 16px;
+        line-height: 120%;
+        color: rgba(49, 49, 49, 0.6);
+        margin: 0;
+    }
+}
+
+@media (max-width: 998px) {
+    .footer__container {
+        padding: 40px 20px 60px;
+    }
+}

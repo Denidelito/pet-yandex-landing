@@ -8,9 +8,16 @@
     height: 60px;
 }
 
-.running-line__list {
+.running-line__container {
     display: flex;
+    align-items: center;
+}
+
+.running-line__list {
     position: absolute;
+    display: flex;
+    align-items: center;
+    margin: 0!important;
 }
 
 .running-line__item {
@@ -20,7 +27,6 @@
     font-family: var(--font-secondary), sans-serif;
     padding-right: 30px;
 }
-
 
 @media (max-width: 998px) {
     .running-line {

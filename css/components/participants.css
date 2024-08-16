@@ -12,7 +12,7 @@
     .slider__nav {
         position: absolute;
         right: 29px;
-        top: 200px;
+        top: 210px;
         padding: 0;
     }
 }
@@ -47,6 +47,7 @@
 }
 
 .participants__card__button {
+    display: inline-block;
     padding: 7px 12px;
     border-radius: 62px;
     font-size: 16px;
