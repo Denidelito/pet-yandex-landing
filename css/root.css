@@ -35,3 +35,7 @@ body {
         max-width: 475px;
     }
 }
+
+.hide-title {
+    display: none;
+}
